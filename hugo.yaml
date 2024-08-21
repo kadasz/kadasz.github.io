@@ -1,3 +1,70 @@
-baseURL: https://example.org/
+baseURL: https://kadasz.github.io
 languageCode: en-us
-title: My New Hugo Site
+title: kadasz
+theme: PaperMod
+
+
+
+
+params:
+  env: production
+  description: "My personal site"
+  author: Karol D. Sz
+  ShowShareButtons: true
+  ShareButtons: ["linkedin", "github"]
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  hideSummary: false
+  hideFooter: false
+
+  homeInfoParams:
+    Content: >
+      And the best way of learning is learning by having fun and constantly experimenting with that, searching, asking questions, re-checking, searching even do not know what's exactly.
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/kadasz"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/karol-szczepek-8745631b9"
+  profileMode:
+    # Enabled or not
+    enabled: true
+    title: Hello there!👋
+    subtitle: |
+      It is the place where I'll mostly publish my notes but also share things that I work on with. I've decided to create that place because a mess of many notes and also management issue. Some of notes are in the smart phone app, the other are store in files like pdf or txt and some other ones are just somewhre... And so, while I mainly post for myself because of above, I hope that some kind of my content will be also useful for someone else.
+    imageUrl: ../assets/avatar.png
+    imageWidth: 200
+    imageHeight: 200
+    imageTitle: MyAvatar
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"] ##  can be less but not more than shown in list
+
+
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 15
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 20
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 30
