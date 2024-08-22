@@ -10,8 +10,6 @@ params:
   env: production
   description: "My personal site"
   author: Karol D. Sz
-  ShowShareButtons: true
-  ShareButtons: ["linkedin", "github"]
   ShowBreadCrumbs: true
   ShowReadingTime: true
   ShowPostNavLinks: true
@@ -37,6 +35,14 @@ params:
     imageWidth: 200
     imageHeight: 200
     imageTitle: MyAvatar
+    buttons:
+      - name: About me
+        url: "/about/"
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/kadasz"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/karol-szczepek-8745631b9"
 
   fuseOpts:
     isCaseSensitive: false
@@ -53,7 +59,7 @@ params:
 menu:
   main:
     - identifier: posts
-      name: Posts
+      name: Notes
       url: /posts/
       weight: 10
     - identifier: tags
@@ -65,6 +71,16 @@ menu:
       url: /search/
       weight: 20
     - identifier: about
-      name: About
+      name: About me
       url: /about/
       weight: 30
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 35
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
