@@ -30,7 +30,7 @@ params:
     enabled: true
     title: Hello there!👋
     subtitle: |
-      It is the place where I'll mostly publish my notes but also share things that I work on with. I've decided to create that place because a mess of many notes and also management issue. Some of notes are in the smart phone app, the other are store in files like pdf or txt and some other ones are just somewhre... And so, while I mainly post for myself because of above, I hope that some kind of my content will be also useful for someone else.
+      It is the place where I'll mostly publish my notes but also share things that I work on with. I've decided to create that place because a mess of many notes and also management issue. Some of notes are in the smart phone app, the other are store in files like pdf or txt and some other ones are just somewhere... And so, while I mainly post for myself because of above and for it allows me to get back here later and could help me to solve some issues when I face it. Besides, I hope that some kind of my content will be also useful for someone else 🙂
     imageUrl: ../assets/avatar.png
     imageWidth: 200
     imageHeight: 200
