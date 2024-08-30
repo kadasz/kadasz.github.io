@@ -60,7 +60,13 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./public
-
+      - name: Prepare resume site
+        run: |
+          mkdir -p ./public/resume/ 
+          cp ./resume/index.html ./public/resume/
+          cp -r ./resume/images ./public/assets/
+          cp ./resume/*.css ./public/assets/css/
+        shell: bash
   # Deployment job
   deploy:
     environment:
