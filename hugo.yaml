@@ -38,6 +38,8 @@ params:
     buttons:
       - name: About me
         url: "/about/"
+      - name: Resume
+        url: "/resume/"
   socialIcons:
     - name: "github"
       url: "https://github.com/kadasz"
